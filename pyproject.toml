@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-eval-arena"
+version = "0.1.0"
+description = "Deterministic offline benchmarking of AI agent tool-use traces and safety"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = []
+
+[project.scripts]
+agent-eval = "agenteval.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["agenteval*"]
